@@ -1,0 +1,238 @@
+/* PALETA NUEVA EN TONOS AGUA MARINA */
+:root {
+    --agua-claro: #A8F1FF;
+    --agua-suave: #9EE7DD;
+    --verde-azul: #7BC6C3;
+    --texto-oscuro: #0F2A2E;
+    --texto-suave: #f6ffff;
+    --fondo-claro: #F4FEFF;
+    --max-width: 1200px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo-claro);
+    font-family: 'Lato', sans-serif;
+    color: var(--texto-oscuro);
+}
+
+/* HEADER SUPERIOR */
+.header {
+    width: 100%;
+    background: var(--verde-azul);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo img {
+    height: 60px;
+}
+
+/* NAV */
+.nav .btn {
+    color: var(--texto-oscuro);
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav .btn:hover {
+    color: var(--agua-claro);
+}
+
+/* HERO */
+.hero {
+    max-width: var(--max-width);
+    margin: 120px auto 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: var(--agua-suave);
+    padding: 40px;
+    border-radius: 12px;
+    color: var(--texto-oscuro);
+}
+
+.hero-text h1 {
+    font-family: 'Georgia', serif;
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+.hero-img img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+/* MISION - VISION */
+.mv-section {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.mv-box {
+    background: var(--agua-claro);
+    padding: 40px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.mv-box h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: var(--texto-oscuro);
+}
+
+.mv-box p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* POLÍTICAS */
+.politicas {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    background: var(--agua-claro);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.politicas h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--texto-oscuro);
+}
+
+.politica-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--texto-oscuro);
+    font-family: 'Georgia', serif;
+}
+
+.politica-box p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* TABLA */
+.tabla {
+    max-width: var(--max-width);
+    margin: 40px auto;
+}
+
+.tabla-box {
+    background: var(--agua-claro);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tabla-box img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* ENTREGABLES */
+.entregables {
+    padding: 60px 10%;
+    background: var(--fondo-claro);
+}
+
+.entregables h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--verde-azul);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.entregables .sub {
+    text-align: center;
+    color: #4c6f70;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* CARDS */
+.ent-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--agua-claro);
+    padding: 20px;
+    height: 110px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--texto-oscuro);
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.ent-card:hover {
+    border-color: var(--verde-azul);
+    background: var(--agua-suave);
+    transform: translateY(-5px);
+}
+
+/* BLOQUES DE ENTREGABLES */
+.entregable-bloque {
+    background: var(--agua-claro);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.entregable-bloque h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--texto-oscuro);
+}
+
+.ent-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verde-azul);
+    transition: 0.3s ease;
+}
+
+.ent-link:hover {
+    color: var(--agua-suave);
+    padding-left: 5px;
+}
